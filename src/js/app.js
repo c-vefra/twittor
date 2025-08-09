@@ -1,8 +1,13 @@
 'use strict';
 
+const url = window.location.href;
+const swLocation = '/twittor/sw.js';
+
 if ('serviceWorker' in navigator) {
+  if (url.includes('localhost')) swLocation = '../../sw.js';
+
   navigator.serviceWorker
-    .register('../../sw.js')
+    .register(swLocation)
     .then(register => {
       console.log('Registered', register);
     })

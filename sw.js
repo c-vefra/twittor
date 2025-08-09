@@ -8,7 +8,7 @@ const IMMUTABLE_CACHE = 'immutable-v1';
 const DYNAMIC_CACHE_SIZE = 50;
 
 const APP_SHELL = [
-  '/',
+  // '/',
   'index.html',
   'src/styles/style.css',
   'src/img/favicon.ico',
