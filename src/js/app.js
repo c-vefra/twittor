@@ -1,7 +1,7 @@
 'use strict';
 
 const url = window.location.href;
-const swLocation = '/twittor/sw.js';
+let swLocation = '/twittor/sw.js';
 
 if ('serviceWorker' in navigator) {
   if (url.includes('localhost')) swLocation = '../../sw.js';
